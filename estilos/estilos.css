@@ -1,0 +1,217 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F8F9FA;
+  color: #222222;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 55px;
+}
+
+/* ====== Header ====== */
+.navbar{
+  background-color: #1E3A8A;
+}
+.navbar a{
+  color: white;
+}
+
+.dropdown-menu{
+  background-color: #1E3A8A;
+}
+
+.dropdown .btn{
+  color: white;
+}
+
+.dropdown-menu:hover{
+  border: none;
+}
+
+.dropdown-menu a:hover{
+  background-color: #85a6ff;
+}
+
+/* ====== Panel ====== */
+.panel{
+  height: 600px;
+  background-color: #E3F2FD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel h1 {
+  width: 60%;
+  margin-left: 3rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/* ====== Boton Quiz ====== */
+.divBtnQuiz{
+  width: 25%;
+  height: 6rem;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #a7c9ff;
+}
+
+.btnQuiz{
+  margin-left: 3rem;
+  text-decoration: none;
+  color: #222222;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ====== Temas ====== */
+.divTemasGeneral {
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2Temas {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.divContTemas {
+  width: 70%;
+}
+
+.divImgTemas {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.divImgTemas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.divImgTemas div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+.divImgTemas strong {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.divImgTemas p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.trabajo{
+  background-color: rgba(30, 58, 138, 0.7);
+}
+
+.ambiente{
+  background-color: rgba(46, 139, 87, 0.7);
+}
+
+.salud{
+  background-color: rgba(244, 162, 97, 0.7);
+}
+
+/* ====== Tabla ====== */
+.divTabla{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.divTabla h2{
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #E3F2FD;
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Móvil */
+@media (max-width: 767px) {
+
+/* ====== Panel ====== */
+  .panel{
+    height: 250px;
+  }
+  .panel h1 {
+    width: 80%;    
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+/* ====== Boton Quiz ====== */
+  .divBtnQuiz{
+    width: 50%;
+    height: 3rem;
+    border-bottom-right-radius: 20px;
+  }
+
+  .btnQuiz{
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+/* ====== Temas ====== */
+  .h2Temas {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .divContTemas {
+    width: 90%;
+  }
+}

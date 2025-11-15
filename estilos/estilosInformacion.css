@@ -1,0 +1,260 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #F8F9FA;
+  color: #222222;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 55px;
+}
+
+/* Fondo del header */
+.navbar{
+  background-color: #1E3A8A;
+}
+
+.navbar a{
+  color: white;
+}
+
+/* Fondo del menú desplegable */
+.dropdown-menu{
+  background-color: #1E3A8A !important;  /* Fuerza el color */
+  border: none;
+}
+
+/* Botón del dropdown */
+.dropdown .btn{
+  color: white;
+}
+
+/* Items del dropdown */
+.dropdown-menu a{
+  color: white !important;
+}
+
+/* Hover en los items */
+.dropdown-menu a:hover{
+  background-color: #85a6ff !important;
+  color: #000 !important;
+}
+
+/* ====== Banner ====== */
+.bannerImg {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.imgBanner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.bannerImg h1 {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.divParrafoHist {
+    position: relative; /* necesario para los pseudo-elementos */
+    padding: 20px; /* espacio para el contenido */
+}
+
+/* Esquina inferior izquierda */
+.divParrafoHist::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5px; /* grosor vertical */
+    height: 50%; /* altura vertical de la L */
+    background-color: #CFE2FF;
+}
+
+.divParrafoHist::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%; /* ancho horizontal de la L */
+    height: 5px; /* grosor horizontal */
+    background-color: #CFE2FF;
+}
+
+/* Esquina superior derecha */
+.divParrafoHist span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px; /* grosor vertical */
+    height: 50%; /* altura vertical de la L */
+    background-color: #CFE2FF;
+}
+
+.divParrafoHist span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%; /* ancho horizontal de la L */
+    height: 5px; /* grosor horizontal */
+    background-color: #CFE2FF;
+}
+
+/* ====== Objetivos ====== */
+.objetivos {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.objetivos-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.objetivos-lista li {
+    background: #e8f4fa;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 6px solid #0077b6;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+.objetivos-lista li:hover {
+    background: #d8eef7;
+    transform: translateX(5px);
+}
+
+/* ====== Estadisticas ====== */
+.estadisticas {
+    background: #f4f8fc;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.estadisticas h2 {
+    color: #004d7a;
+    margin-bottom: 15px;
+}
+
+.estadisticas p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.btn-estadisticas {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-estadisticas:hover {
+    background: #005f8c;
+}
+
+/* ====== Practicas ====== */
+.h5Practicas{
+  display: inline-block;
+  border-bottom: 3px solid #CFE2FF;
+  padding-bottom: 2px;
+}
+
+/* ====== FOOTER ====== */
+.info {
+    background: #F8FAFF; /* Fondo suave */
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid #CFE2FF; /* Detalle decorativo */
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ====== Info ====== */
+.info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info ul {
+    list-style: none; /* Quitamos los puntos */
+    padding-left: 0;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #E6EEFF;
+    transition: background 0.2s;
+}
+
+.info ul li:hover {
+    background: #EAF3FF;
+}
+
+.info a {
+    color: #0A58CA;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+    .imgBanner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerImg{
+        margin-bottom: 6.5rem;
+    }
+    .bannerImg h1 {
+        bottom: -100px;
+        left: 50%;
+        color: white;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+}
