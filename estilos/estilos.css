@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #F8F9FA;
   color: #222222;
 }
@@ -10,44 +10,35 @@ body::before {
   height: 55px;
 }
 
-/* ====== Header ====== */
-.navbar{
-  background-color: #1E3A8A;
-}
-.navbar a{
-  color: white;
-}
-
-.dropdown-menu{
-  background-color: #1E3A8A;
-}
-
-.dropdown .btn{
-  color: white;
-}
-
-.dropdown-menu:hover{
-  border: none;
-}
-
-.dropdown-menu a:hover{
-  background-color: #85a6ff;
-}
-
 /* ====== Panel ====== */
 .panel{
   height: 600px;
-  background-color: #E3F2FD;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  background: linear-gradient(#396eff, rgba(0, 0, 0, 0.6) );
 }
 
-.panel h1 {
+.panelh1 {
   width: 60%;
-  margin-left: 3rem;
-  font-size: 5rem;
+  margin-left: 10rem;
+}
+
+.panelh1 h1{
+  font-size: 4rem;
   font-weight: bold;
+  color: white;
+}
+
+.flecha {
+  font-size: 15rem;
+  color: #c0ffe7;
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
 }
 
 /* ====== Boton Quiz ====== */
@@ -68,104 +59,158 @@ body::before {
   font-weight: bold;
 }
 
+.divBtnQuiz:hover{
+  background-color: #74ff6f;
+  border-bottom-right-radius: 20px;
+}
+
 /* ====== Temas ====== */
-.divTemasGeneral {
-  width: 100%;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.funcionamiento {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    font-family: "Inter", Arial, sans-serif;
+    color: #2c3e50;
+}
+
+.funcionamiento h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #222222;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6e6e6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card .icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00509e;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ====== Temas ====== */
+.carousel-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    position: relative;
+    font-family: Arial, sans-serif;
 }
 
 .h2Temas {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #222222;
 }
 
-.divContTemas {
-  width: 70%;
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.divImgTemas {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
+.slide {
+    display: none;
+    position: relative;
 }
 
-.divImgTemas img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.slide img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
 }
 
-.divImgTemas div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.5rem;
-  color: white;
-  box-sizing: border-box;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
 }
 
-.divImgTemas strong {
-  font-size: 1.8rem;
-  display: block;
-  margin-bottom: 0.5rem;
+.overlay a {
+    color: #aad4ff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.divImgTemas p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0;
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
-.trabajo{
-  background-color: rgba(30, 58, 138, 0.7);
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.7);
 }
 
-.ambiente{
-  background-color: rgba(46, 139, 87, 0.7);
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.dots {
+    text-align: center;
+    margin-top: 12px;
 }
 
-.salud{
-  background-color: rgba(244, 162, 97, 0.7);
+.dots span {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dots .active {
+    background: #003366;
+    transform: scale(1.2);
 }
 
 /* ====== Tabla ====== */
-.divTabla{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.divTabla h2{
-  font-weight: bold;
-  font-size: 3rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-.table{
-  width: 80%;
-  margin: 0 auto;
-}
 
-/* ====== Footer ====== */
-footer {
-  background-color: #E3F2FD;
-  color: #fff;
-  padding: 15px 0;
-}
-
-/* ====== FOOTER ====== */
-footer {
-  background-color: #212529;
-  color: #fff;
-  padding: 15px 0;
-}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -185,33 +230,42 @@ footer {
 
 /* ====== Panel ====== */
   .panel{
-    height: 250px;
+    width: 100%;
+    text-align: center; 
+    height: auto;
+    display: block;
+    margin-left: 0;
+
   }
-  .panel h1 {
-    width: 80%;    
+  .panelh1 {
+    margin-left: 0;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .panelh1 h1{
     font-size: 1.5rem;
-    margin-left: 1rem;
+  }
+  .flecha{
+    font-size: 5rem;
   }
 
 /* ====== Boton Quiz ====== */
   .divBtnQuiz{
-    width: 50%;
+    width: 60%;
     height: 3rem;
     border-bottom-right-radius: 20px;
   }
 
   .btnQuiz{
-    margin-left: 2rem;
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
 /* ====== Temas ====== */
-  .h2Temas {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
+  .slide img {
+    height: 250px;
   }
-  .divContTemas {
-    width: 90%;
+  .h2Temas {
+    font-size: 26px;
   }
 }

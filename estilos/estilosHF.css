@@ -1,0 +1,37 @@
+/* Fondo del header */
+.navbar{
+  background-color: #1E3A8A;
+}
+
+.navbar a{
+  color: white;
+}
+
+/* Fondo del menú desplegable */
+.dropdown-menu{
+  background-color: #1E3A8A !important;  /* Fuerza el color */
+  border: none;
+}
+
+/* Botón del dropdown */
+.dropdown .btn{
+  color: white;
+}
+
+/* Items del dropdown */
+.dropdown-menu a{
+  color: white !important;
+}
+
+/* Hover en los items */
+.dropdown-menu a:hover{
+  background-color: #85a6ff !important;
+  color: #000 !important;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 15px 0;
+}

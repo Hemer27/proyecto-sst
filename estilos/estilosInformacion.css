@@ -10,37 +10,6 @@ body::before {
   height: 55px;
 }
 
-/* Fondo del header */
-.navbar{
-  background-color: #1E3A8A;
-}
-
-.navbar a{
-  color: white;
-}
-
-/* Fondo del menú desplegable */
-.dropdown-menu{
-  background-color: #1E3A8A !important;  /* Fuerza el color */
-  border: none;
-}
-
-/* Botón del dropdown */
-.dropdown .btn{
-  color: white;
-}
-
-/* Items del dropdown */
-.dropdown-menu a{
-  color: white !important;
-}
-
-/* Hover en los items */
-.dropdown-menu a:hover{
-  background-color: #85a6ff !important;
-  color: #000 !important;
-}
-
 /* ====== Banner ====== */
 .bannerImg {
     position: relative;
@@ -67,9 +36,10 @@ body::before {
     font-size: 3rem;
 }
 
+/* ====== Historia ====== */
 .divParrafoHist {
-    position: relative; /* necesario para los pseudo-elementos */
-    padding: 20px; /* espacio para el contenido */
+    position: relative;
+    padding: 20px;
 }
 
 /* Esquina inferior izquierda */
@@ -78,8 +48,8 @@ body::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 5px; /* grosor vertical */
-    height: 50%; /* altura vertical de la L */
+    width: 5px;
+    height: 50%;
     background-color: #CFE2FF;
 }
 
@@ -88,8 +58,8 @@ body::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 50%; /* ancho horizontal de la L */
-    height: 5px; /* grosor horizontal */
+    width: 50%;
+    height: 5px;
     background-color: #CFE2FF;
 }
 
@@ -99,8 +69,8 @@ body::before {
     position: absolute;
     right: 0;
     top: 0;
-    width: 5px; /* grosor vertical */
-    height: 50%; /* altura vertical de la L */
+    width: 5px;
+    height: 50%;
     background-color: #CFE2FF;
 }
 
@@ -109,8 +79,8 @@ body::before {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%; /* ancho horizontal de la L */
-    height: 5px; /* grosor horizontal */
+    width: 50%;
+    height: 5px;
     background-color: #CFE2FF;
 }
 
@@ -180,26 +150,177 @@ body::before {
     background: #005f8c;
 }
 
-/* ====== Practicas ====== */
-.h5Practicas{
-  display: inline-block;
-  border-bottom: 3px solid #CFE2FF;
-  padding-bottom: 2px;
+/* ====== Legislacion ====== */
+
+.legis {
+    background-color: #f8f9fa;
+    padding: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* ====== FOOTER ====== */
+.accordion-button {
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: 500;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: #e9ecef;
+    color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.accordion-body {
+    background-color: #fdfdfe;
+    border-left: 3px solid #0d6efd;
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.accordion-item {
+    margin-bottom: 0.5rem;
+}
+
+.accordion-button strong {
+    font-weight: 700;
+}
+
+#accordionNormas .accordion-button {
+    border-left: 5px solid #198754;
+}
+
+/* ===== Riesgos ===== */
+.layout-riesgos{
+    display: flex;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.riesgos {
+    width: 60%;
+    padding: 30px;
+    background: #f2f2f2;
+    border-radius: 0.5rem;
+}
+
+.riesgo-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.riesgo-card button {
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.riesgo-card button:hover {
+    background: #005fcc;
+}
+
+.InfTiposRiesgos{
+    width: 40%;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.InfTiposRiesgosDiv{
+    padding: 2rem;
+}
+
+.InfTiposRiesgos img{
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+/* ----- css del modal ----- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria img {
+    max-width: 250px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ====== Practicas ====== */
+.practicas {
+    margin: 3rem;
+    display: block;
+    justify-content: center;
+}
+.list{
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0 0.2rem rgba(149, 191, 255, 0.25);
+}
+
+/* ====== Info ====== */
 .info {
-    background: #F8FAFF; /* Fondo suave */
+    background: #F8FAFF;
     padding: 25px;
     border-radius: 10px;
-    border-left: 6px solid #CFE2FF; /* Detalle decorativo */
+    border-left: 6px solid #CFE2FF;
     max-width: 700px;
     margin: 30px auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     font-family: "Segoe UI", sans-serif;
 }
 
-/* ====== Info ====== */
 .info p {
     font-size: 1rem;
     color: #333;
@@ -234,27 +355,58 @@ body::before {
     text-decoration: underline;
 }
 
-/* ====== FOOTER ====== */
-footer {
-  background-color: #212529;
-  color: #fff;
-  padding: 15px 0;
-}
-
+/* ====== Movil ====== */
 @media (max-width: 600px) {
     .imgBanner {
         width: 100%;
         height: 300px;
         object-fit: cover;
     }
+
     .bannerImg{
         margin-bottom: 6.5rem;
     }
     .bannerImg h1 {
         bottom: -100px;
         left: 50%;
+        width: 90%;
         color: white;
         text-align: center;
         font-size: 1.7rem;
     }
+
+    .legis{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .layout-riesgos{
+        display: block;
+        padding: 0;
+    }
+    .riesgos{
+        width: 100%;
+    }
+    .InfTiposRiesgos{
+        width: 80%;
+        margin: 3;
+    }
+    .InfTiposRiesgosDiv{
+        width: 100%;
+    }
+    .practicas{
+        margin: 1rem;
+    }
+    .list{
+        width: 100%;
+    }
+
+}
+
+/* ====== Tablet ====== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bannerImg h1{
+        width: 70%;
+    }
+    
+
 }
