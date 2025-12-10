@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f5f9;
+}
+
+.btnVolver {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  z-index: 10; /* asegura que esté encima */
+}
+
+.contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px;
+  margin: 0;
+  width: 350px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+p {
+  margin-top: 0;
+  color: #777;
+}
+
+.divInput {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divInput p {
+  background: #f7f9fc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+.divInput input {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+.btnLogin, .btnRegistro {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btnLogin:hover, .btnRegistro:hover {
+  background: #218838;
+}
+
+@media (max-width: 767px) {
+  .btnVolver {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+    .contenedor {
+        padding-top: 60px; /* deja espacio para el botón */
+    }
+  .card{
+    width: 90%;
+  }
+}

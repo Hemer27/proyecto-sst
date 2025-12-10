@@ -7,6 +7,11 @@
   color: white;
 }
 
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 /* Fondo del menú desplegable */
 .dropdown-menu{
   background-color: #1E3A8A !important;  /* Fuerza el color */
@@ -18,6 +23,14 @@
   color: white;
 }
 
+.dropdown .btn:hover{
+  color: #ffffff;
+}
+
+.dropdown:hover{
+  color: #ffffff;
+}
+
 /* Items del dropdown */
 .dropdown-menu a{
   color: white !important;
@@ -26,7 +39,7 @@
 /* Hover en los items */
 .dropdown-menu a:hover{
   background-color: #85a6ff !important;
-  color: #000 !important;
+  color: #ffffff !important;
 }
 
 /* ====== FOOTER ====== */
@@ -34,4 +47,22 @@ footer {
   background-color: #212529;
   color: #fff;
   padding: 15px 0;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    display: block;
+    text-align: left;
+  }
+
+  .navbar .btn {
+    width: auto;
+    margin: 5px 0;
+  }
+  
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle,
+  .navbar-nav .nav-item {
+    margin-left: 0 !important;
+  }
 }

@@ -16,52 +16,48 @@ body::before {
   display: flex;
   justify-content: left;
   align-items: center;
-  background: linear-gradient(#396eff, rgba(0, 0, 0, 0.6) );
+  background: linear-gradient(#396eff, rgba(0, 0, 0, 0.4) );
 }
 
 .panelh1 {
-  width: 60%;
-  margin-left: 10rem;
+  width: 90%;
+  margin-left: 6rem;
 }
 
 .panelh1 h1{
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: white;
 }
-
-.flecha {
-  font-size: 15rem;
-  color: #c0ffe7;
-  animation: bounce 0.8s infinite;
+.panelh1 h5{
+  color: white;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(20px); }
+.divImgPanel .imgPanel{
+  width: 100%;
+  height: auto;
+  color: white;
 }
-
 /* ====== Boton Quiz ====== */
 .divBtnQuiz{
-  width: 25%;
-  height: 6rem;
-  border-bottom-right-radius: 20px;
+  width: 50%;
+  height: 3rem;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  background-color: #a7c9ff;
+  background-color: #1E3A8A;
 }
 
 .btnQuiz{
   margin-left: 3rem;
   text-decoration: none;
-  color: #222222;
+  color: #ffffff;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 .divBtnQuiz:hover{
-  background-color: #74ff6f;
-  border-bottom-right-radius: 20px;
+  background-color: #0026ff;
 }
 
 /* ====== Temas ====== */
@@ -245,15 +241,15 @@ body::before {
   .panelh1 h1{
     font-size: 1.5rem;
   }
-  .flecha{
-    font-size: 5rem;
+  .panelh1 h5{
+    font-size: 0.9rem;
+    display: none;
   }
 
 /* ====== Boton Quiz ====== */
   .divBtnQuiz{
-    width: 60%;
+    width: 65%;
     height: 3rem;
-    border-bottom-right-radius: 20px;
   }
 
   .btnQuiz{

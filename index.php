@@ -18,14 +18,18 @@
     <div class="panel">
         <div id="" class="panelh1">
             <h1>Aprende sobre Seguridad en el Trabajo 🦺, Medio Ambiente 🌱 y Hábitos Saludables ❤️ de forma divertida.</h1>
+            <h5>Bienvenido/a a este espacio donde podrás aprender de forma sencilla y agradable sobre seguridad en el trabajo, cuidado del medio ambiente y hábitos saludables para mejorar tu bienestar cada día.</h5>
+            <!-- BTN Quiz -->        
+            <div class="divBtnQuiz">
+                <a href="#" class="btnQuiz">Realizar el Quiz 📝</a>
+            </div>
         </div>
-        <div class="flecha">⬇</div>
+        <div class="divImgPanel">
+            <img class="imgPanel" src="img/imgPanel.png" alt="">
+        </div>
     </div>
 
-  <!-- BTN Quiz -->
-    <div class="divBtnQuiz">
-        <a href="#" class="btnQuiz">Realizar el Quiz 📝</a>
-    </div>
+    
 
   <!-- Funcionamiento -->
     <section class="funcionamiento">

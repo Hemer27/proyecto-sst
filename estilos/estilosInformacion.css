@@ -244,6 +244,7 @@ body::before {
 
 .InfTiposRiesgos{
     width: 40%;
+    height: 100%;
     margin: 2rem;
     text-align: center;
     border-radius: 2rem;
@@ -261,7 +262,7 @@ body::before {
     border-bottom-left-radius: 2rem;
 }
 
-/* ----- css del modal ----- */
+/* ----- css modal imagenes ----- */
 .modal {
     display: none;
     position: fixed;
@@ -296,11 +297,19 @@ body::before {
     cursor: pointer;
 }
 
-/* ====== Practicas ====== */
+/* ====== Practicas - Factores ====== */
 .practicas {
     margin: 3rem;
     display: block;
     justify-content: center;
+}
+.practicas .card-img-top{
+    width: 100%;
+    padding: 1rem;
+    height: 250px;
+}
+.practicas .col-12{
+    border-color: white;
 }
 .list{
     width: 80%;
@@ -395,6 +404,9 @@ body::before {
     }
     .practicas{
         margin: 1rem;
+    }
+    .practicas .card-img-top{
+        height: 200px;
     }
     .list{
         width: 100%;
