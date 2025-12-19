@@ -1,0 +1,16 @@
+[17-Dec-2025 19:56:36 Europe/Berlin] PHP Warning:  Undefined array key "apellido" in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 33
+[17-Dec-2025 19:58:51 Europe/Berlin] PHP Warning:  Undefined array key "apellido" in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 33
+[17-Dec-2025 19:59:28 Europe/Berlin] PHP Warning:  Undefined array key "apellido" in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 33
+[17-Dec-2025 19:59:44 Europe/Berlin] PHP Warning:  Undefined array key "apellido" in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 33
+[17-Dec-2025 20:17:00 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:17:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:20:26 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:20:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:22:53 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:22:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:48:12 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:48:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:48:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[17-Dec-2025 20:48:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[19-Dec-2025 03:21:52 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32
+[19-Dec-2025 03:21:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\proyecto_sst\php\procesarQuiz.php on line 32

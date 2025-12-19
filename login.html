@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/estilosLogReg.css">
-    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilosLogReg.css">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
 
-    <a href="../index.php" class="btnVolver">Volver al inicio</a>
+    <a href="index.php" class="btnVolver">Volver al inicio</a>
 
     <div class="contenedor">
         <div class="card">
@@ -18,17 +18,19 @@
             <p>Use su correo y contraseña</p>
             <a href="registro.html">¿No tienes cuenta?</a>
 
-            <div class="grupoDiv">
+            <form action="php/login.php" method="POST" class="grupoDiv">
+
                 <div class="divInput">
-                    <p>📧 <input type="email" placeholder="Correo"></p>
+                    <p>📧 <input type="email" name="email" placeholder="Correo" required></p>
                 </div>
 
                 <div class="divInput">
-                    <p>🔒 <input type="password" placeholder="Contraseña"></p>
+                    <p>🔒 <input type="password" name="password" placeholder="Contraseña" required></p>
                 </div>
-            </div>
 
-            <button type="button" class="btnLogin">Ingresar</button>
+                <button type="submit" class="btnLogin">Ingresar</button>
+
+            </form>
         </div>
     </div>
     

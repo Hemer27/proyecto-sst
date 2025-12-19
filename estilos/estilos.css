@@ -38,166 +38,265 @@ body::before {
   height: auto;
   color: white;
 }
+
 /* ====== Boton Quiz ====== */
-.divBtnQuiz{
-  width: 50%;
+.btnQuiz {
+  width: 250px;
   height: 3rem;
   border-radius: 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #1E3A8A;
-}
-
-.btnQuiz{
-  margin-left: 3rem;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.4rem;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: bold;
+  margin: 20px auto;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
 }
 
-.divBtnQuiz:hover{
+/* Efecto hover */
+.btnQuiz:hover {
+  background-color: #2563EB;
+}
+
+/* Efecto al dar click */
+.btnQuiz:active {
+  transform: scale(0.97);
+}
+
+.divBtnQuiz:hover {
   background-color: #0026ff;
+}
+
+.alert, .modal {
+  display: none;
+  color: #ffffff;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 1000;
+  align-items: flex-start;
+}
+
+.alertCont, .modalCont {
+  background: #5665bb;
+  width: 320px;
+  margin: 15% auto;
+  margin-top: 20vh;
+  padding: 20px 25px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.modalCont h3 {
+  padding: 12px 15px;
+  margin: 0 0 15px 0;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* Labels */
+.modalCont label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Selects */
+.modalCont select {
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Contenedor botones */
+.modalCont .grupoBtn {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Botones */
+.modalCont .btnAM {
+  flex: 1;
+  width: 40%;
+  padding: 10px 0;
+  background-color: #0040ff;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalCont .btnAM:hover {
+  background-color: #002bb5;
+}
+
+.btnAM{
+  padding: 6px 15px;
+  background-color: #0046d6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 /* ====== Temas ====== */
 .funcionamiento {
-    width: 90%;
-    max-width: 1100px;
-    margin: 60px auto;
-    font-family: "Inter", Arial, sans-serif;
-    color: #2c3e50;
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  font-family: "Inter", Arial, sans-serif;
+  color: #2c3e50;
 }
 
 .funcionamiento h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #222222;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222222;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e6e6e6;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6e6e6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card .icon {
-    font-size: 38px;
-    margin-bottom: 15px;
+  font-size: 38px;
+  margin-bottom: 15px;
 }
 
 .card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #00509e;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00509e;
 }
 
 .card p {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* ====== Temas ====== */
 .carousel-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-    position: relative;
-    font-family: Arial, sans-serif;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
 .h2Temas {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #222222;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222222;
 }
 
 .carousel {
-    position: relative;
-    overflow: hidden;
-    border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .slide {
-    display: none;
-    position: relative;
+  display: none;
+  position: relative;
 }
 
 .slide img {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
 }
 
 .overlay a {
-    color: #aad4ff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #aad4ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.4);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .prev:hover, .next:hover {
-    background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.7);
 }
 
 .prev { left: 15px; }
 .next { right: 15px; }
 
 .dots {
-    text-align: center;
-    margin-top: 12px;
+  text-align: center;
+  margin-top: 12px;
 }
 
 .dots span {
-    height: 12px;
-    width: 12px;
-    margin: 0 4px;
-    background: #bbb;
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .dots .active {
@@ -206,7 +305,73 @@ body::before {
 }
 
 /* ====== Tabla ====== */
+.titulo-ranking {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    font-size: 1.8em;
+    color: #333;
+}
 
+.ranking-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.ranking-card {
+    background: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ranking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.ranking-card .posicion {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ranking-card .usuario {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ranking-card .tema,
+.ranking-card .dificultad {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.ranking-card .puntaje {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Colores según posición */
+.primero {
+    background: #ffe066;
+}
+.segundo {
+    background: #c0c0c0;
+}
+.tercero {
+    background: #cd7f32;
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -263,5 +428,14 @@ body::before {
   }
   .h2Temas {
     font-size: 26px;
+  }
+
+/* ====== Tabla ====== */
+  .ranking-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ranking-card {
+     width: 80%;
   }
 }

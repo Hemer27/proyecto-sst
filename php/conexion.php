@@ -12,5 +12,5 @@ if ($conn->connect_errno) {
     exit;
 }
 
-$conn->set_charset("utf8mb4"); // Evita problemas con tildes y emojis
+$conn->set_charset("utf8mb4");
 ?>
